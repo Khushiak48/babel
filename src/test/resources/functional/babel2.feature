@@ -1,5 +1,5 @@
 @homepage
-Feature: Verificaton of babel website
+Feature: Verificaton2 of babel website
 
   Background: 
     Given Go to "http://babel.es/en/"
@@ -65,5 +65,7 @@ Feature: Verificaton of babel website
     When I click on "Digital User"
     Then Verify the heading "User"
 
-
-  
+  Scenario: Verify12 Services
+    Given Keep the mouse on services heading
+    When I click on "Digital User"
+    Then Verify the heading "User"

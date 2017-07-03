@@ -13,8 +13,6 @@ public class HomePage {
 
 	private WebDriver driver;
 
-	private String servicesName;
-
 	private String aboutbabelName;
 
 	private String solutionsName;
@@ -33,10 +31,7 @@ public class HomePage {
 	By clickDigitalUser = By.xpath("(//a[@href ='/en/services/digital-user'][1])");
 	By aboutBabelHover = By.xpath("(//a[contains(text(),'About BABEL')])[1]");
 	By solutionshover = By.xpath("(//a[@href ='/en/soluciones'])[1]");
-	By subServices = By.xpath("(//a[contains(text(),'" + servicesName + "')])[1]");
-	By aboutBabelHover1 = By.xpath("(//a[contains(text(),'" + aboutbabelName + "')])[1]");
 	By directWriter = By.xpath("(//a[contains(text(),'Direct Writer')])[1]");
-	By solutionshover1 = By.xpath("(//a[contains(text(),'" + solutionsName + "')])[1]");
 
 	public String getVideoMessage() {
 		WebElement videoElement = driver.findElement(videoMessageXpath);
@@ -63,11 +58,12 @@ public class HomePage {
 		driver.findElement(People).click();
 	}
 
-	public void hoverServices() {
+	public void hoverServices() throws InterruptedException {
 		WebElement serviceHover = driver.findElement(servicesHover);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(serviceHover);
 		actions.build().perform();
+		Thread.sleep(1000);
 	}
 
 	public void clickOnDigitalUser() {
@@ -89,7 +85,7 @@ public class HomePage {
 	}
 
 	public void clickOnSubServices(String services) throws InterruptedException {
-		servicesName = services;
+		By subServices = By.xpath("(//a[contains(text(),'" + services + "')])[1]");
 		WebElement serviceHover = driver.findElement(subServices);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(serviceHover).click();
@@ -98,7 +94,7 @@ public class HomePage {
 	}
 
 	public void clickOnAboutBabelSection(String aboutbabel) throws InterruptedException {
-		aboutbabelName = aboutbabel;
+		By aboutBabelHover1 = By.xpath("(//a[contains(text(),'" + aboutbabel + "')])[1]");
 		WebElement aboutBabelHover = driver.findElement(aboutBabelHover1);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(aboutBabelHover).click();
@@ -112,7 +108,7 @@ public class HomePage {
 	}
 	
 	public void clickOnSubSolutions(String solutions) throws InterruptedException {
-		solutionsName = solutions;
+		By solutionshover1 = By.xpath("(//a[contains(text(),'" + solutions + "')])[1]");
 		WebElement hoversolution =  driver.findElement(solutionshover1);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(hoversolution).click();

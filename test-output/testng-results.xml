@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="13425" started-at="2017-07-01T17:42:27Z" finished-at="2017-07-01T17:42:40Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.babel.es.RunFunctionalTests@3c0ecd4b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="FirefoxTest" duration-ms="13425" started-at="2017-07-01T17:42:27Z" finished-at="2017-07-01T17:42:40Z">
+      <class name="com.babel.es.RunFunctionalTests">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.babel.es.RunFunctionalTests@3c0ecd4b]" name="setUpClass" is-config="true" duration-ms="387" started-at="2017-07-01T18:42:27Z" finished-at="2017-07-01T18:42:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="parameterTest(java.lang.String)[pri:0, instance:com.babel.es.RunFunctionalTests@3c0ecd4b]" name="parameterTest" is-config="true" duration-ms="2" started-at="2017-07-01T18:42:27Z" finished-at="2017-07-01T18:42:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterTest -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.babel.es.RunFunctionalTests@3c0ecd4b]" name="feature" duration-ms="12891" started-at="2017-07-01T18:42:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-07-01T18:42:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verificaton of babel website]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.babel.es.RunFunctionalTests@3c0ecd4b]" name="tearDownClass" is-config="true" duration-ms="20" started-at="2017-07-01T18:42:40Z" finished-at="2017-07-01T18:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.babel.es.RunFunctionalTests -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

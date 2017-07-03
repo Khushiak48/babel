@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="none">
+
+	<test name="FirefoxTest">
+		<parameter name="browsername" value="firefox"/>
+		<classes>
+			<class name="com.babel.es.RunFunctionalTests"/>
+		</classes>
+	</test>
+
+	<!-- <test name="ChromeTest">
+		<parameter name="browsername" value="chrome"/>
+		<classes>
+			<class name="com.babel.es.RunFunctionalTests"/>
+		</classes>
+	</test>
+
+	<test name="IETest">
+		<parameter name="browsername" value="ie"/>
+		<classes>
+			<class name="com.babel.es.RunFunctionalTests"/>
+		</classes>
+	</test> -->
+
+</suite>
